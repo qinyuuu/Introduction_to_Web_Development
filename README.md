@@ -2,4 +2,5 @@
 
 This repository is your starting point for the assignment.
 
-Link to GitHub pages website: XXXXXX
+Link to GitHub pages website: http://github.com - automatic!
+[GitHub](http://github.com)
