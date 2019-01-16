@@ -1,14 +1,30 @@
-<!DOCTYPE html>
-<html>
+var myImage = document.querySelector('img');
 
-<head>
-    <meta charset="utf-8">
-    <title>My test page</title>
-</head>
+myImage.onclick = function() {
+	var mySrc = myImage.getAttribute('src');
+	if(mySrc === 'images/firefox2.png') {
+      myImage.setAttribute ('src','images/firefox-icon.png');
+	} else {
+	  myImage.setAttribute ('src','images/firefox2.png');
+	}
+}
 
-<body>
-    <h1>ha</h1>
-</body>
+var myButton = document.querySelector('button');
+var myHeading = document.querySelector('h1');
 
+function setUserName() {
+  var myName = prompt('Please enter your name:');
+  localStorage.setItem('name', myName);
+  myHeading.innerHTML = 'Mozilla is Coooool, ' + myName;
+}
 
-</html>
+if(!localStorage.getItem('name')) {
+  setUserName();
+} else {
+  var storedName = localStorage.getItem('name');
+  myHeading.innerHTML = 'Mozilla is Coooool, ' + storedName;
+}
+
+myButton.onclick = function() {
+  setUserName();
+}
