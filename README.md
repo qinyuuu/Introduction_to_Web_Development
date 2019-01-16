@@ -2,5 +2,4 @@
 
 This repository is your starting point for the assignment.
 
-Link to GitHub pages website: http://github.com - automatic!
-[GitHub](http://github.com)
+Link to GitHub pages website: http://qinyuuu.github.io/Introduction_to_Web_Development.
